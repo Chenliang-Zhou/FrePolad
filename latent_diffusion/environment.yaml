@@ -1,0 +1,27 @@
+name: phd-research
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python
+  - pip
+  - cudatoolkit=11.0
+  - pytorch
+  - torchvision
+  - numpy
+  - pip:
+    - albumentations
+    - opencv-python
+    - pudb
+    - imageio
+    - imageio-ffmpeg
+    - pytorch-lightning
+    - omegaconf
+    - test-tube>=0.7.5
+    - streamlit>=0.73.1
+    - einops
+    - torch-fidelity
+    - transformers
+#    - -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+#    - -e git+https://github.com/openai/CLIP.git@main#egg=clip
+    - -e .
